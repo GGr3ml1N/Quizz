@@ -12,19 +12,60 @@
         <action
             android:id="@+id/action_placeholder_to_placeholder2"
             app:destination="@id/placeholder2" />
-        <action
-            android:id="@+id/action_placeholder_to_placeholder4"
-            app:destination="@id/placeholder4" />
     </fragment>
     <fragment android:id="@+id/placeholder2" >
         <action
-            android:id="@+id/action_placeholder2_to_placeholder5"
-            app:destination="@id/placeholder5" />
+            android:id="@+id/action_placeholder2_to_placeholder3"
+            app:destination="@id/placeholder3" />
     </fragment>
     <fragment android:id="@+id/placeholder4" >
         <action
             android:id="@+id/action_placeholder4_to_placeholder5"
             app:destination="@id/placeholder5" />
     </fragment>
-    <fragment android:id="@+id/placeholder5" />
+    <fragment android:id="@+id/placeholder5" >
+        <action
+            android:id="@+id/action_placeholder5_to_placeholder6"
+            app:destination="@id/placeholder6" />
+    </fragment>
+    <fragment android:id="@+id/placeholder3" >
+        <action
+            android:id="@+id/action_placeholder3_to_placeholder4"
+            app:destination="@id/placeholder4" />
+    </fragment>
+    <fragment android:id="@+id/placeholder6" >
+        <action
+            android:id="@+id/action_placeholder6_to_placeholder7"
+            app:destination="@id/placeholder7" />
+    </fragment>
+    <fragment android:id="@+id/placeholder7" >
+        <action
+            android:id="@+id/action_placeholder7_to_placeholder8"
+            app:destination="@id/placeholder8" />
+    </fragment>
+    <fragment android:id="@+id/placeholder8" >
+        <action
+            android:id="@+id/action_placeholder8_to_placeholder9"
+            app:destination="@id/placeholder9" />
+    </fragment>
+    <fragment android:id="@+id/placeholder9" >
+        <action
+            android:id="@+id/action_placeholder9_to_placeholder10"
+            app:destination="@id/placeholder10" />
+    </fragment>
+    <fragment android:id="@+id/placeholder10" >
+        <action
+            android:id="@+id/action_placeholder10_to_placeholder11"
+            app:destination="@id/placeholder11" />
+    </fragment>
+    <fragment android:id="@+id/placeholder11" >
+        <action
+            android:id="@+id/action_placeholder11_to_placeholder12"
+            app:destination="@id/placeholder12" />
+    </fragment>
+    <fragment android:id="@+id/placeholder12" >
+        <action
+            android:id="@+id/action_placeholder12_to_placeholder2"
+            app:destination="@id/placeholder2" />
+    </fragment>
 </navigation>
