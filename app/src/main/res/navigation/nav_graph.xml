@@ -3,29 +3,42 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/placeholder">
+    app:startDestination="@id/blankFragmentMenu">
 
-    <fragment android:id="@+id/placeholder"
-        android:name="com.ggr3ml1n.quizz.TestFragment1"
-        android:label="test1"
-        tools:layout="@layout/fragment_test1">
+    <fragment
+        android:id="@+id/blankFragmentStart"
+        android:name="com.ggr3ml1n.quizz.BlankFragmentStart"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_blank_start" >
         <action
-            android:id="@+id/action_placeholder_to_placeholder2"
-            app:destination="@id/placeholder2" />
+            android:id="@+id/action_blankFragmentStart_to_blankFragmentMenu"
+            app:destination="@id/blankFragmentMenu" />
     </fragment>
-    <fragment android:id="@+id/placeholder2" >
+    <fragment
+        android:id="@+id/blankFragmentMenu"
+        android:name="com.ggr3ml1n.quizz.BlankFragmentMenu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_blank_menu" >
         <action
-            android:id="@+id/action_placeholder2_to_placeholder3"
-            app:destination="@id/placeholder3" />
+            android:id="@+id/action_blankFragmentMenu_to_blankFragmentQuestion"
+            app:destination="@id/blankFragmentQuestion" />
     </fragment>
-    <fragment android:id="@+id/placeholder3" >
+    <fragment
+        android:id="@+id/blankFragmentQuestion"
+        android:name="com.ggr3ml1n.quizz.BlankFragmentQuestion"
+        android:label="fragment_blank_question"
+        tools:layout="@layout/fragment_blank_question" >
         <action
-            android:id="@+id/action_placeholder3_to_placeholder4"
-            app:destination="@id/placeholder4" />
+            android:id="@+id/action_blankFragmentQuestion_to_blankFragmentReturn"
+            app:destination="@id/blankFragmentReturn" />
     </fragment>
-    <fragment android:id="@+id/placeholder4" >
+    <fragment
+        android:id="@+id/blankFragmentReturn"
+        android:name="com.ggr3ml1n.quizz.BlankFragmentReturn"
+        android:label="fragment_blank_return"
+        tools:layout="@layout/fragment_blank_return" >
         <action
-            android:id="@+id/action_placeholder4_to_placeholder"
-            app:destination="@id/placeholder" />
+            android:id="@+id/action_blankFragmentReturn_to_blankFragmentMenu"
+            app:destination="@id/blankFragmentMenu" />
     </fragment>
 </navigation>
